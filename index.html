@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VVED Veg Restaurant & VVEDHIC Banquets Lawns | Pune</title>
+    <meta name="description" content="Experience royal fine-dining and host majestic events at VVED and VVEDHIC Banquets & Lawns in Manjari Budruk, Pune. Premium pure vegetarian excellence.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* =========================================================
+           ROYAL MIDNIGHT BURGUNDY & CHAMPAGNE GOLD LUX DARK SYSTEM
+           ========================================================= */
+        :root {
+            --bg-base: #0f070b; /* Pure midnight plum/black */
+            --bg-surface: #190d14; /* Deep velvet burgundy card background */
+            --bg-accent: #23121b; /* Slightly lighter plum-burgundy */
+            --primary-gold: #dcae82; /* Warm Champagne Gold */
+            --primary-gold-rgb: 220, 174, 130;
+            --primary-crimson: #8c2a43; /* Deep velvet rose */
+            --gold-glow: linear-gradient(135deg, #e4bf9c 0%, #dcae82 50%, #b88a5c 100%);
+            --text-main: #fcf9fa; /* Creamy white */
+            --text-muted: #b9a2ab; /* Muted mauve gray */
+            --border-gold: rgba(220, 174, 130, 0.2);
+            --border-gold-active: rgba(220, 174, 130, 0.6);
+            --shadow-lux: 0 15px 35px rgba(0, 0, 0, 0.6), 0 5px 15px rgba(140, 42, 67, 0.1);
+            --transition-lux: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+            
+            /* Typography */
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-display: 'Cinzel', serif;
+            --font-sans: 'Montserrat', sans-serif;
+            --border-radius: 12px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        /* Decorative Grid Overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(220, 174, 130, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(220, 174, 130, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+            z-index: 1;
+        }
+        /* Header Navigation */
+        .lux-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 90px;
+            background: rgba(15, 7, 11, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-gold);
+            padding: 0 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1000;
+            transition: var(--transition-lux);
+        }
+        .lux-navbar.scrolled {
+            height: 75px;
+            background: rgba(15, 7, 11, 0.96);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.9rem;
+            text-decoration: none;
+        }
+        .brand-crest {
+            width: 44px;
+            height: 44px;
+            border: 1px solid var(--primary-gold);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-surface);
+            transform: rotate(45deg);
+            transition: var(--transition-lux);
+        }
+        .brand-crest i {
+            color: var(--primary-gold);
+            font-size: 1.2rem;
+            transform: rotate(-45deg);
+        }
+        .navbar-brand:hover .brand-crest {
+            transform: rotate(135deg);
+            background: var(--primary-crimson);
+        }
+        .brand-text h1 {
+            font-family: var(--font-display);
+            font-size: 1.7rem;
+            color: var(--text-main);
+            font-weight: 700;
+            letter-spacing: 2px;
+            line-height: 1;
+        }
+        .brand-text span {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: var(--primary-gold);
+            font-weight: 600;
+            display: block;
+            margin-top: 0.3rem;
+        }
+        .navbar-links {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+        }
+        .navbar-links a {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: var(--transition-lux);
+            position: relative;
+            padding: 0.4rem 0;
+        }
+        .navbar-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--primary-gold);
+            transition: var(--transition-lux);
+        }
+        .navbar-links a:hover, .navbar-links a.active {
+            color: var(--primary-gold);
+        }
+        .navbar-links a:hover::after, .navbar-links a.active::after {
+            width: 100%;
+        }
+        .nav-btn-gold {
+            padding: 0.7rem 1.6rem;
+            border: 1px solid var(--primary-gold);
+            background: transparent;
+            color: var(--primary-gold);
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: var(--transition-lux);
+            border-radius: 2px;
+        }
+        .nav-btn-gold:hover {
+            background: var(--gold-glow);
+            color: var(--bg-base);
+            box-shadow: 0 0 15px rgba(220, 174, 130, 0.4);
+        }
+        /* Immersive Floating Bento Hero */
+        .hero-banner {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 7rem 8% 4rem;
+            z-index: 2;
+            overflow: hidden;
+        }
+        /* Full Screen Background Image Slider/Showcase */
+        .hero-banner-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgba(15, 7, 11, 0.8), rgba(15, 7, 11, 0.85)), url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1800&q=80');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            transform: scale(1.05);
+            animation: zoomBg 20s infinite alternate;
+        }
+        @keyframes zoomBg {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.08); }
+        }
+        .hero-bento-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 2.5rem;
+            width: 100%;
+            max-width: 1300px;
+            margin: 0 auto;
+            align-items: center;
+        }
+        .hero-main-card {
+            background: rgba(25, 13, 20, 0.65);
+            border: 1px solid var(--border-gold);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 4rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-lux);
+        }
+        .hero-badge {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: var(--primary-gold);
+            display: block;
+            margin-bottom: 1rem;
+        }
+        .hero-main-card h2 {
+            font-family: var(--font-serif);
+            font-size: 3.5rem;
+            font-weight: 500;
+            line-height: 1.15;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+        }
+        .hero-main-card h2 span {
+            font-family: var(--font-display);
+            color: var(--primary-gold);
+            font-size: 2.8rem;
+            display: block;
+            margin-top: 0.5rem;
+        }
+        .hero-main-card p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+            line-height: 1.8;
+        }
+        .hero-btn-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        /* Luxury Button Standard */
+        .gold-btn {
+            padding: 1rem 2.2rem;
+            background: var(--gold-glow);
+            color: var(--bg-base);
+            border: none;
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: var(--transition-lux);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            border-radius: 2px;
+        }
+        .gold-btn:hover {
+            box-shadow: 0 0 25px rgba(220, 174, 130, 0.5);
+            transform: translateY(-2px);
+        }
+        .outline-btn {
+            padding: 1rem 2.2rem;
+            background: transparent;
+            color: var(--text-main);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: var(--transition-lux);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            border-radius: 2px;
+        }
+        .outline-btn:hover {
+            border-color: var(--primary-gold);
+            color: var(--primary-gold);
+            transform: translateY(-2px);
+        }
+        /* Bento Sidebar Details Card */
+        .hero-side-card {
+            background: rgba(35, 18, 27, 0.8);
+            border: 1px solid var(--border-gold);
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            box-shadow: var(--shadow-lux);
+        }
+        .side-info-item {
+            display: flex;
+            gap: 1.2rem;
+        }
+        .side-info-item i {
+            color: var(--primary-gold);
+            font-size: 1.5rem;
+            margin-top: 0.2rem;
+        }
+        .side-info-item h4 {
+            font-family: var(--font-display);
+            font-size: 0.9rem;
+            letter-spacing: 1.5px;
+            margin-bottom: 0.4rem;
+            color: #ffffff;
+        }
+        .side-info-item p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+        /* Sections Structure */
+        .lux-section {
+            padding: 7.5rem 8%;
+            position: relative;
+            z-index: 2;
+        }
+        .section-header-gold {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+        .section-header-gold span {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: var(--primary-gold);
+            display: block;
+            margin-bottom: 0.6rem;
+        }
+        .section-header-gold h2 {
+            font-family: var(--font-serif);
+            font-size: 3.2rem;
+            font-weight: 400;
+            color: #ffffff;
+        }
+        .header-divider {
+            width: 80px;
+            height: 1px;
+            background: var(--primary-gold);
+            margin: 1.5rem auto 0;
+            position: relative;
+        }
+        .header-divider::after {
+            content: '♦';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--primary-gold);
+            background-color: var(--bg-base);
+            padding: 0 10px;
+            font-size: 0.7rem;
+        }
+        /* Pillars Bento layout */
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        .pillar-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-gold);
+            padding: 3.5rem 2.5rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            transition: var(--transition-lux);
+            box-shadow: var(--shadow-lux);
+        }
+        .pillar-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary-gold);
+            background: var(--bg-accent);
+        }
+        .pillar-icon-box {
+            width: 70px;
+            height: 70px;
+            border: 1px solid var(--primary-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            background: rgba(220, 174, 130, 0.05);
+            transition: var(--transition-lux);
+        }
+        .pillar-card:hover .pillar-icon-box {
+            background: var(--primary-gold);
+        }
+        .pillar-card:hover .pillar-icon-box i {
+            color: var(--bg-base);
+        }
+        .pillar-icon-box i {
+            font-size: 1.6rem;
+            color: var(--primary-gold);
+            transition: var(--transition-lux);
+        }
+        .pillar-card h3 {
+            font-family: var(--font-serif);
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+        .pillar-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        /* Ambience Showcase Grid (Beautiful and Dynamic Images) */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 3rem;
+            max-width: 1300px;
+            margin: 0 auto;
+            align-items: center;
+        }
+        .gallery-photo-frame {
+            position: relative;
+            border: 1px solid var(--border-gold);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            height: 480px;
+            box-shadow: var(--shadow-lux);
+        }
+        .gallery-photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-lux);
+        }
+        .gallery-photo-frame:hover img {
+            transform: scale(1.05);
+        }
+        .gallery-badge {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            background: rgba(15, 7, 11, 0.8);
+            border: 1px solid var(--primary-gold);
+            padding: 0.5rem 1.2rem;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--primary-gold);
+            backdrop-filter: blur(10px);
+        }
+        .gallery-info-card {
+            display: flex;
+            flex-direction: column;
+            gap: 1.8rem;
+        }
+        .gallery-info-card h3 {
+            font-family: var(--font-serif);
+            font-size: 2.4rem;
+            font-weight: 400;
+            line-height: 1.25;
+            color: #ffffff;
+        }
+        .gallery-info-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+        /* Dual Ambiance Slider/Split Section */
+        .ambiance-dual-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            max-width: 1300px;
+            margin: 4rem auto 0;
+        }
+        .ambiance-slide-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-gold);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lux);
+            transition: var(--transition-lux);
+        }
+        .ambiance-slide-card:hover {
+            border-color: var(--primary-gold);
+        }
+        .slide-card-img {
+            height: 280px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        .slide-card-body {
+            padding: 2.5rem;
+        }
+        .slide-card-body h4 {
+            font-family: var(--font-serif);
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 0.6rem;
+            color: var(--primary-gold);
+        }
+        .slide-card-body p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        /* Royal Menu Book Format (Beautiful text layout with gold dotted lines) */
+        .menu-book-container {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-gold);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-lux);
+            padding: 5rem;
+            max-width: 1300px;
+            margin: 0 auto;
+            position: relative;
+        }
+        /* Classical Ornamental Corners */
+        .menu-book-container::before, .menu-book-container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            border: 1px solid var(--primary-gold);
+            pointer-events: none;
+        }
+        .menu-book-container::before { top: 15px; left: 15px; border-right: none; border-bottom: none; }
+        .menu-book-container::after { bottom: 15px; right: 15px; border-left: none; border-top: none; }
+        .menu-search-box {
+            position: relative;
+            width: 100%;
+            max-width: 550px;
+            margin: 0 auto 3.5rem;
+        }
+        .menu-search-box i {
+            position: absolute;
+            left: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary-gold);
+            font-size: 1rem;
+        }
+        .menu-search-box input {
+            width: 100%;
+            padding: 1.1rem 1.5rem 1.1rem 3.2rem;
+            background: var(--bg-accent);
+            border: 1px solid var(--border-gold);
+            border-radius: 30px;
+            color: var(--text-main);
+            font-family: inherit;
+            outline: none;
+            transition: var(--transition-lux);
+            font-size: 0.9rem;
+        }
+        .menu-search-box input:focus {
+            border-color: var(--primary-gold);
+            box-shadow: 0 0 15px rgba(220, 174, 130, 0.15);
+            background: var(--bg-surface);
+        }
+        .menu-filter-row {
+            width: 100%;
+            overflow-x: auto;
+            margin-bottom: 4.5rem;
+            padding-bottom: 0.8rem;
+        }
+        .filter-buttons-wrapper {
+            display: flex;
+            gap: 0.8rem;
+            width: max-content;
+            margin: 0 auto;
+        }
+        .filter-tab-btn {
+            padding: 0.7rem 1.5rem;
+            background: var(--bg-accent);
+            border: 1px solid var(--border-gold);
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+            transition: var(--transition-lux);
+            border-radius: 2px;
+        }
+        .filter-tab-btn.active, .filter-tab-btn:hover {
+            background: var(--primary-gold);
+            color: var(--bg-base);
+            border-color: var(--primary-gold);
+        }
+        /* Menu layout rows with dotted leaders */
+        .menu-book-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem 5rem;
+        }
+        .menu-book-section-title {
+            grid-column: span 2;
+            margin-top: 1.5rem;
+        }
+        .book-category-header {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            color: var(--primary-gold);
+            border-bottom: 1px solid var(--border-gold);
+            padding-bottom: 0.6rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-weight: 400;
+        }
+        .book-category-header i {
+            font-size: 1.1rem;
+            color: var(--primary-crimson);
+        }
+        .dish-row-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            padding-bottom: 1.2rem;
+            border-bottom: 1px dashed rgba(220, 174, 130, 0.1);
+        }
+        .dish-header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            position: relative;
+        }
+        .dish-name-txt {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #ffffff;
+            background: var(--bg-surface);
+            padding-right: 0.8rem;
+            z-index: 2;
+        }
+        .dish-leader-dots {
+            flex-grow: 1;
+            border-bottom: 1px dotted rgba(220, 174, 130, 0.25);
+            margin: 0 0.5rem;
+            height: 1px;
+        }
+        .dish-price-txt {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary-gold);
+            background: var(--bg-surface);
+            padding-left: 0.8rem;
+            z-index: 2;
+        }
+        .dish-desc-txt {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        /* Elegant Banquets & Lawns Details */
+        .banquets-pane {
+            background-image: linear-gradient(rgba(15, 7, 11, 0.92), rgba(15, 7, 11, 0.92)), url('https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=1800&q=80');
+            background-size: cover;
+            background-position: center;
+            border-top: 1px solid var(--border-gold);
+            border-bottom: 1px solid var(--border-gold);
+        }
+        .venue-collage-layout {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4rem;
+            max-width: 1300px;
+            margin: 0 auto;
+            align-items: center;
+        }
+        .venue-display-card {
+            position: relative;
+            border: 1px solid var(--border-gold);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            height: 480px;
+            box-shadow: var(--shadow-lux);
+        }
+        .venue-display-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .venue-tag-overlay {
+            position: absolute;
+            bottom: 2.5rem;
+            left: 2.5rem;
+            background: rgba(25, 13, 20, 0.9);
+            border-left: 3px solid var(--primary-gold);
+            padding: 1rem 2rem;
+            border-radius: 0 4px 4px 0;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+        .venue-tag-overlay h4 {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin-bottom: 0.2rem;
+        }
+        .venue-tag-overlay p {
+            font-size: 0.75rem;
+            color: var(--primary-gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .venue-text-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 2.2rem;
+        }
+        .venue-text-panel h3 {
+            font-family: var(--font-serif);
+            font-size: 2.6rem;
+            font-weight: 400;
+            line-height: 1.25;
+            color: #ffffff;
+        }
+        .venue-text-panel p {
+            color: var(--text-muted);
+            font-size: 0.98rem;
+            line-height: 1.8;
+        }
+        .amenities-bento {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+            width: 100%;
+        }
+        .amenity-row {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+        .amenity-row i {
+            color: var(--primary-gold);
+            font-size: 1rem;
+        }
+        /* Glassmorphic Interactive Booking Desk */
+        .booking-glass-wrapper {
+            background: rgba(25, 13, 20, 0.75);
+            border: 1px solid var(--border-gold);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: var(--border-radius);
+            padding: 4.5rem;
+            max-width: 950px;
+            margin: 0 auto;
+            box-shadow: var(--shadow-lux);
+            position: relative;
+        }
+        .booking-toggle-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            margin-bottom: 3.5rem;
+        }
+        .toggle-btn-lux {
+            padding: 0.8rem 2rem;
+            background: var(--bg-accent);
+            border: 1px solid var(--border-gold);
+            color: var(--text-muted);
+            font-family: var(--font-sans);
+            font-weight: 600;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: var(--transition-lux);
+        }
+        .toggle-btn-lux.active {
+            background: var(--primary-gold);
+            color: var(--bg-base);
+            border-color: var(--primary-gold);
+            box-shadow: 0 0 15px rgba(220, 174, 130, 0.3);
+        }
+        .booking-inputs-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.2rem;
+        }
+        .input-box-gold {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+        .input-box-gold.full-span {
+            grid-column: span 2;
+        }
+        .input-box-gold label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: var(--primary-gold);
+            font-weight: 600;
+        }
+        .input-box-gold input, .input-box-gold select, .input-box-gold textarea {
+            padding: 1.1rem;
+            background: var(--bg-accent);
+            border: 1px solid var(--border-gold);
+            border-radius: 4px;
+            color: var(--text-main);
+            outline: none;
+            font-family: inherit;
+            font-size: 0.9rem;
+            transition: var(--transition-lux);
+        }
+        .input-box-gold input:focus, .input-box-gold select:focus, .input-box-gold textarea:focus {
+            border-color: var(--primary-gold);
+            box-shadow: 0 0 10px rgba(220, 174, 130, 0.1);
+            background: rgba(25, 13, 20, 0.9);
+        }
+        /* Map and Contact Footer */
+        .footer-lux {
+            background: #090407; /* Jet black */
+            color: #ffffff;
+            padding: 7rem 8% 3rem;
+            border-top: 1px solid var(--border-gold);
+        }
+        .footer-flex-cols {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 5rem;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        .footer-info-column {
+            padding-right: 2rem;
+        }
+        .footer-info-column h3 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--primary-gold);
+            letter-spacing: 2px;
+            margin-bottom: 0.8rem;
+        }
+        .footer-info-column span {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--text-muted);
+            display: block;
+            margin-bottom: 2rem;
+        }
+        .footer-info-column p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.8;
+            max-width: 580px;
+        }
+        .footer-contact-details {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+            margin-top: 3rem;
+        }
+        .contact-row-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.2rem;
+            font-size: 0.95rem;
+        }
+        .contact-row-item i {
+            color: var(--primary-gold);
+            font-size: 1.1rem;
+            margin-top: 0.25rem;
+        }
+        .contact-row-item a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: var(--transition-lux);
+        }
+        .contact-row-item a:hover {
+            color: var(--primary-gold);
+        }
+        .footer-map-frame {
+            border: 1px solid var(--border-gold);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+        }
+        .footer-bottom-bar {
+            text-align: center;
+            margin-top: 6rem;
+            border-top: 1px solid rgba(220, 174, 130, 0.1);
+            padding-top: 2.5rem;
+            font-size: 0.75rem;
+            letter-spacing: 1.5px;
+            color: var(--text-muted);
+        }
+        /* Floating Luxury WhatsApp Widget */
+        .whatsapp-float-widget {
+            position: fixed;
+            bottom: 2.5rem;
+            right: 2.5rem;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+            cursor: pointer;
+            z-index: 1000;
+            transition: var(--transition-lux);
+            text-decoration: none;
+        }
+        .whatsapp-float-widget:hover {
+            transform: scale(1.1) translateY(-4px);
+            box-shadow: 0 15px 35px rgba(37, 211, 102, 0.6);
+        }
+        .whatsapp-widget-pulse {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 2px solid #25D366;
+            top: 0;
+            left: 0;
+            animation: pulseWidget 2.2s infinite;
+            pointer-events: none;
+        }
+        .whatsapp-active-dot {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 14px;
+            height: 14px;
+            background-color: #ff3b30;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+        }
+        @keyframes pulseWidget {
+            0% { transform: scale(1); opacity: 0.8; }
+            100% { transform: scale(1.45); opacity: 0; }
+        }
+        /* Responsive Breakpoints */
+        @media (max-width: 1024px) {
+            .navbar-links, .nav-btn-gold {
+                display: none;
+            }
+            .lux-navbar {
+                padding: 0 6%;
+                height: 80px;
+            }
+            .hero-bento-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .hero-banner {
+                padding-top: 8rem;
+            }
+            .pillars-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .gallery-photo-frame {
+                height: 340px;
+            }
+            .ambiance-dual-split {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .menu-book-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            .menu-book-section-title {
+                grid-column: span 1;
+            }
+            .venue-collage-layout {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .venue-display-card {
+                height: 350px;
+            }
+            .footer-flex-cols {
+                grid-template-columns: 1fr;
+                gap: 4rem;
+            }
+            .menu-book-container, .booking-glass-wrapper {
+                padding: 3rem 1.8rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .hero-main-card {
+                padding: 2.5rem 1.5rem;
+            }
+            .hero-main-card h2 {
+                font-size: 2.5rem;
+            }
+            .hero-main-card h2 span {
+                font-size: 2rem;
+            }
+            .booking-inputs-grid {
+                grid-template-columns: 1fr;
+            }
+            .input-box-gold.full-span {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Luxury Navigation Header -->
+    <header class="lux-navbar" id="navbar">
+        <a href="#home" class="navbar-brand">
+            <div class="brand-crest">
+                <i class="fa-solid fa-hotel"></i>
+            </div>
+            <div class="brand-text">
+                <h1>VVED</h1>
+                <span>Restaurant & Lawns</span>
+            </div>
+        </a>
+        <nav class="navbar-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#heritage">The Standard</a>
+            <a href="#ambiance">Ambiance</a>
+            <a href="#menu">Imperial Menu</a>
+            <a href="#banquets">Banquets & Lawns</a>
+            <a href="#booking">Bookings</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="nav-btn-gold" onclick="scrollToSection('#booking')">Book Table</button>
+    </header>
+    <!-- Bento Floating Hero Section -->
+    <section id="home" class="hero-banner">
+        <div class="hero-banner-bg"></div>
+        <div class="hero-bento-grid">
+            <div class="hero-main-card">
+                <span class="hero-badge">Pure Veg Luxury Fine-Dining</span>
+                <h2>VVED Restaurant <span>& VVEDHIC Banquets</span></h2>
+                <p>Indulge in pure vegetarian fine-dining or host grand receptions up to 1000+ guests at Pune's premier royal venue. Exquisite hospitality, refined culinary heritage.</p>
+                <div class="hero-btn-group">
+                    <button class="gold-btn" onclick="scrollToSection('#menu')"><i class="fa-solid fa-receipt"></i> Explore Menu</button>
+                    <button class="outline-btn" onclick="scrollToSection('#booking')"><i class="fa-solid fa-calendar-check"></i> Reservation Desk</button>
+                </div>
+            </div>
+            <div class="hero-side-card">
+                <div class="side-info-item">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <div>
+                        <h4>Address Info</h4>
+                        <p>Z Corner, Manjari Budruk, Pune, MH 412307</p>
+                    </div>
+                </div>
+                <div class="side-info-item">
+                    <i class="fa-solid fa-phone-flip"></i>
+                    <div>
+                        <h4>Instant Reservation</h4>
+                        <p>Call or WhatsApp: +91 96893 44545</p>
+                    </div>
+                </div>
+                <div class="side-info-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <div>
+                        <h4>Purity Standards</h4>
+                        <p>100% pure vegetarian kitchen with Vedic hygiene standards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- The VVED Standards Section -->
+    <section id="heritage" class="lux-section">
+        <div class="section-header-gold">
+            <span>Our Foundation</span>
+            <h2>The Pillars of Hospitality</h2>
+            <div class="header-divider"></div>
+        </div>
+        <div class="pillars-grid">
+            <div class="pillar-card">
+                <div class="pillar-icon-box">
+                    <i class="fa-solid fa-wheat-awn"></i>
+                </div>
+                <h3>100% Pure Veg Cuisine</h3>
+                <p>Separate kitchen paths and strict ingredient screening policies to serve authentic multi-cuisine vegetarian gastronomy.</p>
+            </div>
+            
+            <div class="pillar-card">
+                <div class="pillar-icon-box">
+                    <i class="fa-solid fa-chess-castle"></i>
+                </div>
+                <h3>Royal Banqueting Lawns</h3>
+                <p>Lush green manicured lawns and state-of-the-art AC banquets ready to transform weddings and celebrations into royal events.</p>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-icon-box">
+                    <i class="fa-solid fa-bell-concierge"></i>
+                </div>
+                <h3>Artisanal Culinary Care</h3>
+                <p>Crafted by culinary specialists utilizing high-quality ingredients, presenting dining with style and grace.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Ambiance Gallery Section (Stunning Ambiance Photos Instead of Food Dishes) -->
+    <section id="ambiance" class="lux-section" style="background: var(--bg-surface); border-top: 1px solid var(--border-gold); border-bottom: 1px solid var(--border-gold);">
+        <div class="section-header-gold">
+            <span>Stunning Ambience</span>
+            <h2>Visual Splendor & Comfort</h2>
+            <div class="header-divider"></div>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-photo-frame">
+                <span class="gallery-badge">Imperial Fine Dining Room</span>
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" alt="VVED Elegant Indoor Fine Dining Area">
+            </div>
+            
+            <div class="gallery-info-card">
+                <h3>Designed for Exquisite Gastronomy Experiences</h3>
+                <p>Step into an ambiance of gold light, velvet upholstery, and acoustic balance. Every table is meticulously aligned to deliver premium visual appeal and conversational comfort for families, corporates, and couples.</p>
+                <p>Our spacious seating arrays host family gatherings with private layout options, keeping comfort at the forefront of the VVED experience.</p>
+                <button class="gold-btn" onclick="scrollToSection('#booking')">Plan Your Visit</button>
+            </div>
+        </div>
+        <!-- Additional Ambiance Slides -->
+        <div class="ambiance-dual-split">
+            <div class="ambiance-slide-card">
+                <div class="slide-card-img" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="slide-card-body">
+                    <h4>Cozy Family Dining Lounges</h4>
+                    <p>Designed with warm colors, luxurious settings, and privacy screens, providing the perfect atmosphere for quality family time.</p>
+                </div>
+            </div>
+            <div class="ambiance-slide-card">
+                <div class="slide-card-img" style="background-image: url('https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="slide-card-body">
+                    <h4>Grand Event Setup & Lighting</h4>
+                    <p>Majestic lighting designs that enhance wedding stages, corporate events, and evening receptions under the stars.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Imperial Menu Section (Text Only with Dotted Leaders) -->
+    <section id="menu" class="lux-section">
+        <div class="section-header-gold">
+            <span>The Dining Catalog</span>
+            <h2>Imperial Veg Menu Selection</h2>
+            <div class="header-divider"></div>
+        </div>
+        <div class="menu-book-container">
+            <!-- Search Widget -->
+            <div class="menu-search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="menuSearch" placeholder="Search dish name (e.g. Paneer Tikka Masala, Veg Crispy)...">
+            </div>
+            <!-- Categories Tab Filter -->
+            <div class="menu-filter-row">
+                <div class="filter-buttons-wrapper" id="menuTabs">
+                    <!-- Loaded dynamically -->
+                </div>
+            </div>
+            <!-- Double Column Menu Grid -->
+            <div class="menu-book-grid" id="menuGrid">
+                <!-- Items render here without images -->
+            </div>
+        </div>
+    </section>
+    <!-- Banquets & Lawns Details Section -->
+    <section id="banquets" class="lux-section banquets-pane">
+        <div class="section-header-gold">
+            <span>Royal Celebrations Arena</span>
+            <h2>VVEDHIC Banquets & Lawns</h2>
+            <div class="header-divider"></div>
+        </div>
+        <div class="venue-collage-layout">
+            <div class="venue-display-card">
+                <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1200&q=80" alt="Beautiful Wedding Lawns Setup">
+                <div class="venue-tag-overlay">
+                    <h4>Majestic Wedding Lawn</h4>
+                    <p>Capacity: Up to 1000+ Guests</p>
+                </div>
+            </div>
+            <div class="venue-text-panel">
+                <h3>Host Grand Celebrations With Impeccable Style</h3>
+                <p>The VVEDHIC Lawns and AC Banquets offer spacious, landscaped areas perfect for hosting wedding receptions, sangeets, birthday programs, corporate dinners, and large gatherings. Our layout is customizable to host setups of any scale.</p>
+                
+                <div class="amenities-bento">
+                    <div class="amenity-row"><i class="fa-solid fa-snowflake"></i> <span>Luxury AC Banquet Hall Connected to Lawns</span></div>
+                    <div class="amenity-row"><i class="fa-solid fa-square-parking"></i> <span>Spacious Parking with Valet Support</span></div>
+                    <div class="amenity-row"><i class="fa-solid fa-ring"></i> <span>Customized Premium Stage & Floral Decor</span></div>
+                    <div class="amenity-row"><i class="fa-solid fa-hotel"></i> <span>Comfortable Green Rooms for Hosts</span></div>
+                </div>
+                <div>
+                    <button class="gold-btn" onclick="scrollToSection('#booking')">Get Event Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Glassmorphic Booking Form Section -->
+    <section id="booking" class="lux-section">
+        <div class="section-header-gold">
+            <span>Inquiry Desk</span>
+            <h2>Reservation Console</h2>
+            <div class="header-divider"></div>
+        </div>
+        <div class="booking-glass-wrapper">
+            <div class="booking-toggle-buttons">
+                <button class="toggle-btn-lux active" id="dineToggle">Book Fine Dining Table</button>
+                <button class="toggle-btn-lux" id="banquetToggle">Request Event Lawn Quote</button>
+            </div>
+            <form id="bookingForm">
+                <div class="booking-inputs-grid">
+                    <div class="input-box-gold">
+                        <label for="bookName">Your Name</label>
+                        <input type="text" id="bookName" required placeholder="Enter full name">
+                    </div>
+                    <div class="input-box-gold">
+                        <label for="bookPhone">Contact Phone</label>
+                        <input type="tel" id="bookPhone" required placeholder="e.g. 09689344545">
+                    </div>
+                    <div class="input-box-gold">
+                        <label for="bookDate">Select Date</label>
+                        <input type="date" id="bookDate" required>
+                    </div>
+                    
+                    <!-- Dining Only Guests Field -->
+                    <div class="input-box-gold" id="guestsFormGroup">
+                        <label for="bookGuests">Number of Guests</label>
+                        <select id="bookGuests">
+                            <option value="2">2 Guests (Couple Table)</option>
+                            <option value="4">4 Guests (Family Dining)</option>
+                            <option value="6">6 Guests (Group Celebration)</option>
+                            <option value="8+">8+ Guests (Grand Family Table)</option>
+                        </select>
+                    </div>
+                    <!-- Banquet Only Event Field -->
+                    <div class="input-box-gold" id="eventFormGroup" style="display: none;">
+                        <label for="bookEvent">Type of Function</label>
+                        <select id="bookEvent">
+                            <option value="Wedding reception">Wedding Ceremony / Reception</option>
+                            <option value="Birthday / Anniversary party">Birthday / Anniversary party</option>
+                            <option value="Corporate Meet">Corporate Delegation</option>
+                            <option value="Social gathering">Family Gathering / Social Meet</option>
+                        </select>
+                    </div>
+                    <div class="input-box-gold full-span">
+                        <label for="bookNotes">Special Wishes or Specific Inquiries</label>
+                        <textarea id="bookNotes" rows="3" placeholder="Let us know if you require specific seating arrangements, special children menus, or stage design specifications..."></textarea>
+                    </div>
+                    
+                    <div class="input-box-gold full-span" style="margin-top: 1rem;">
+                        <button type="submit" class="gold-btn" style="justify-content: center; width: 100%;">
+                            <i class="fa-brands fa-whatsapp"></i> Dispatch Booking Inquiry via WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Map & Contact Footer -->
+    <footer id="contact" class="footer-lux">
+        <div class="footer-flex-cols">
+            <div class="footer-info-column">
+                <h3>VVED PALACE</h3>
+                <span>Premium Dining & Royal Celebrations</span>
+                <p>Indulge in a premium pure vegetarian experience and hold grand banqueting events in our lush green lawns at Manjari Budruk, Pune. Delivering premium hospitality and delicious culinary experiences.</p>
+                
+                <ul class="footer-contact-details">
+                    <li class="contact-row-item">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <span>GXG4+497, G-mall, near Z Corner, Shiv Krishna Society, Manjari Budruk, Pune, Maharashtra 412307</span>
+                    </li>
+                    <li class="contact-row-item">
+                        <i class="fa-solid fa-headset"></i>
+                        <a href="tel:09689344545">09689344545</a>
+                    </li>
+                    <li class="contact-row-item">
+                        <i class="fa-solid fa-hourglass-start"></i>
+                        <span>Operating Hours: 11:30 AM to 11:00 PM (Everyday)</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-map-frame">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.5684705574765!2d73.96213607582098!3d18.503233287431267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c23f2f000001%3A0x6739678e788730b2!2sManjari%20Budruk%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1717653000000!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="320" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
+            <p>&copy; 2026 VVED Palace. All Rights Reserved. Crafted with Royal Prestige.</p>
+        </div>
+    </footer>
+    <!-- Floating Luxury WhatsApp Button -->
+    <a href="https://wa.me/919689344545" class="whatsapp-float-widget" target="_blank" aria-label="WhatsApp Booking Desk">
+        <span class="whatsapp-active-dot"></span>
+        <div class="whatsapp-widget-pulse"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" style="color: #ffffff;"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.333 4.982L2 22l5.233-1.371a9.936 9.936 0 0 0 4.779 1.21h.005c5.505 0 9.988-4.478 9.989-9.984 0-2.669-1.038-5.176-2.924-7.062C17.198 2.907 14.69 2 12.012 2zm5.727 14.156c-.314.882-1.802 1.625-2.484 1.701-.61.068-1.411.096-2.28-.184-5.385-1.745-8.868-7.228-9.137-7.587-.268-.359-2.184-2.906-2.184-5.542 0-2.636 1.354-3.93 1.839-4.462.485-.532 1.066-.665 1.422-.665.356 0 .71.002.994.015.306.014.718-.117 1.121.849.414.992 1.415 3.456 1.537 3.704.122.247.202.535.039.86-.162.326-.245.528-.485.808-.24.281-.505.626-.721.84-.239.237-.488.496-.21.97.278.473 1.233 2.03 2.65 3.292 1.823 1.624 3.35 2.13 3.822 2.327.472.197.747.163 1.028-.155.281-.318 1.221-1.42 1.545-1.905.324-.485.648-.403 1.093-.242.446.162 2.83 1.334 3.315 1.577.485.242.808.356.924.557.116.2.116 1.157-.198 2.039z"/></svg>
+    </a>
+    <!-- Menu Control Scripts -->
+    <script>
+        // --- Full Transcribed Menu Data (57 Items) ---
+        const MENU_DATA = [
+            // CHINESE STARTERS
+            { name: "Veg Crispy", category: "chinese-starters", price: 230, desc: "Crispy fried assorted vegetables tossed in a tangy garlic-chilli sauce." },
+            { name: "Veg Manchurian Dry", category: "chinese-starters", price: 230, desc: "Savory vegetable dumplings fried and tossed in sweet, sour & spicy sauce." },
+            { name: "Veg Spring Roll", category: "chinese-starters", price: 230, desc: "Crispy wrapper filled with seasoned cabbage, carrots, and spring onions." },
+            { name: "Honey Chilli Potato", category: "chinese-starters", price: 240, desc: "Crisped potato strips coated with sweet honey and hot red chilli sauce flakes." },
+            { name: "Gobi Manchurian Dry", category: "chinese-starters", price: 230, desc: "Crunchy cauliflower florets tossed in dark soy and garlic sauces." },
+            { name: "Paneer Chilli Dry", category: "chinese-starters", price: 260, desc: "Cottage cheese chunks tossed with bell peppers and green chillies." },
+            { name: "Paneer Schezwan Dry", category: "chinese-starters", price: 260, desc: "Paneer cubes wok-fried in hot, pungent Schezwan spice sauce." },
+            { name: "Mushroom Chilli Dry", category: "chinese-starters", price: 250, desc: "Fresh button mushrooms tossed with green chillies, onions, and dark soy." },
+            { name: "Baby Corn Chilli Dry", category: "chinese-starters", price: 240, desc: "Tender baby corn fingers tossed in hot garlic pepper chilli paste." },
+            { name: "Paneer Satay", category: "chinese-starters", price: 270, desc: "Skewered paneer ribbons grilled and served with spiced peanut sauce glaze." },
+            { name: "Veg Satay", category: "chinese-starters", price: 240, desc: "Mixed vegetable sticks grilled to perfection with peanut seasoning." },
+            // CONTINENTAL STARTERS
+            { name: "Cheese Garlic Bread", category: "continental-starters", price: 210, desc: "Toasted slices topped with herb garlic butter and bubbling mozzarella." },
+            { name: "Garlic Bread", category: "continental-starters", price: 150, desc: "Crispy toasted French bread brushed with rich garlic-butter spread." },
+            { name: "French Fries", category: "continental-starters", price: 130, desc: "Classic golden cut potato fries, lightly salted." },
+            { name: "Peri Peri French Fries", category: "continental-starters", price: 150, desc: "Golden fries dusted with hot African peri-peri spices." },
+            { name: "Cheese French Fries", category: "continental-starters", price: 170, desc: "French fries loaded with hot melted processed cheddar sauce." },
+            { name: "Veg Cheese Balls", category: "continental-starters", price: 240, desc: "Crispy fried breaded balls loaded with potato, corn, and cheese core." },
+            { name: "Paneer Finger", category: "continental-starters", price: 250, desc: "Tender paneer strips breaded with herbs and deep fried to golden color." },
+            // CHINESE MAIN COURSE
+            { name: "Veg Fried Rice", category: "chinese-mains", price: 230, desc: "Wok stir-fried rice tossed with crunch vegetables and light soy." },
+            { name: "Veg Schezwan Fried Rice", category: "chinese-mains", price: 240, desc: "Spicy fried rice tossed in house-made red Schezwan chili oil." },
+            { name: "Veg Hakka Noodles", category: "chinese-mains", price: 230, desc: "Classic stir-fried noodles with shredded cabbage, carrots, and peppers." },
+            { name: "Veg Schezwan Noodles", category: "chinese-mains", price: 240, desc: "Wok noodles tossed in fiery red hot Schezwan paste." },
+            { name: "Paneer Fried Rice", category: "chinese-mains", price: 250, desc: "Stir-fried rice loaded with diced paneer cubes and soy inputs." },
+            { name: "Triple Schezwan Fried Rice", category: "chinese-mains", price: 290, desc: "Triple combo containing fried rice, noodles, and crispy fried noodles with red gravy." },
+            { name: "Veg Manchurian Gravy", category: "chinese-mains", price: 230, desc: "Vegetable dumplings cooked inside a thick garlic-soy gravy." },
+            { name: "Paneer Chilli Gravy", category: "chinese-mains", price: 260, desc: "Paneer cubes cooked inside a spicy soy-chilli gravy base." },
+            // TANDOORI / KEBABS
+            { name: "Paneer Tikka", category: "tandoor", price: 270, desc: "Cottage cheese cubes marinated in yogurt spices, clay-oven cooked." },
+            { name: "Paneer Malai Tikka", category: "tandoor", price: 280, desc: "Mild paneer tikka marinated in rich cashew cream and cardamom." },
+            { name: "Paneer Achari Tikka", category: "tandoor", price: 270, desc: "Paneer marinated in pickling spice yogurt mix and baked." },
+            { name: "Veg Seekh Kebab", category: "tandoor", price: 240, desc: "Skewered minced mixed vegetable kebabs seasoned with cumin." },
+            { name: "Hara Bhara Kebab", category: "tandoor", price: 220, desc: "Fried patties made of green spinach, green peas, and potatoes." },
+            { name: "Mushroom Tikka", category: "tandoor", price: 260, desc: "Spiced button mushrooms baked inside clay tandoor." },
+            { name: "Tandoori Gobi", category: "tandoor", price: 230, desc: "Cauliflower florets marinated in red spices and grilled." },
+            // SIZZLER
+            { name: "Veg Sizzler", category: "sizzlers", price: 420, desc: "Served with fried rice, cutlets, boiled vegetables, fries, and pepper gravy." },
+            { name: "Paneer Tikka Sizzler", category: "sizzlers", price: 450, desc: "Served with hot paneer tikka blocks, rice, and butter gravy." },
+            { name: "Special VVED Sizzler", category: "sizzlers", price: 480, desc: "Premium sizzler with cheese balls, paneer skewers, and mix sauce." },
+            // PASTA
+            { name: "Penne Arrabiata (Red)", category: "pasta", price: 260, desc: "Penne tossed in spicy garlic and tomato concasse sauce with olives." },
+            { name: "Penne Alfredo (White)", category: "pasta", price: 270, desc: "Penne cooked in thick creamy cream-butter cheese sauce." },
+            { name: "Pink Sauce Pasta", category: "pasta", price: 280, desc: "Perfect mix of creamy white and tangy red marinara sauces." },
+            // DESSERTS & SHAKES
+            { name: "Vanilla Ice Cream", category: "desserts", price: 90, desc: "Double scoop of rich vanilla bean ice cream." },
+            { name: "Sizzling Brownie with Ice Cream", category: "desserts", price: 220, desc: "Hot fudge brownie served sizzling with cold vanilla scoop." },
+            { name: "Chocolate Shake", category: "desserts", price: 150, desc: "Thick milk shake blended with premium chocolate syrup." },
+            { name: "Cold Coffee with Ice Cream", category: "desserts", price: 160, desc: "Cold brewed coffee milk blend with a vanilla ice cream scoop." },
+            // MOCKTAILS & JUICES
+            { name: "Virgin Mojito", category: "drinks", price: 140, desc: "Muddled mint leaves, lime wedges, simple syrup, and club soda." },
+            { name: "Fruit Punch", category: "drinks", price: 160, desc: "Creamy tropical mocktail made with mixed fruit juices and vanilla syrup." },
+            { name: "Orange Juice", category: "drinks", price: 120, desc: "Freshly pressed sweet orange juice." },
+            { name: "Watermelon Juice", category: "drinks", price: 110, desc: "Chilled fresh pure watermelon juice." },
+            // INDIAN BREADS
+            { name: "Tandoori Roti (Butter)", category: "indian-bread", price: 40, desc: "Whole wheat clay oven baked bread brushed with butter." },
+            { name: "Butter Naan", category: "indian-bread", price: 65, desc: "Soft leavened flatbread brushed with butter." },
+            { name: "Cheese Garlic Naan", category: "indian-bread", price: 110, desc: "Leavened flatbread topped with garlic-butter and loaded cheese." },
+            { name: "Laccha Paratha", category: "indian-bread", price: 60, desc: "Layered whole wheat pan-baked paratha." },
+            // INDIAN MAIN COURSE
+            { name: "Paneer Butter Masala", category: "indian-mains", price: 280, desc: "Cottage cheese cooked in rich, sweet tomato-butter gravy." },
+            { name: "Paneer Tikka Masala", category: "indian-mains", price: 290, desc: "Spiced chargrilled paneer cooked inside thick masala onion gravy." },
+            { name: "Kadai Paneer", category: "indian-mains", price: 280, desc: "Paneer chunks cooked with freshly ground tandoor spices and bell peppers." },
+            { name: "Veg Makhanwala", category: "indian-mains", price: 260, desc: "Assorted vegetables cooked in sweet creamy butter gravy." },
+            { name: "Dal Tadka", category: "indian-mains", price: 210, desc: "Yellow lentils cooked and tempered with cumin, garlic, and red chillies." },
+            { name: "Veg Biryani", category: "indian-mains", price: 260, desc: "Fragrant basmati rice layered with vegetables, saffron, and biryani spices." }
+        ];
+        // --- Categories Config ---
+        const CATEGORIES = [
+            { id: "all", name: "🌟 Entire Catalog" },
+            { id: "chinese-starters", name: "🥢 Chinese Starters" },
+            { id: "chinese-mains", name: "🍜 Chinese Mains" },
+            { id: "tandoor", name: "🍢 Tandoor Starters" },
+            { id: "indian-mains", name: "🍛 Indian Mains" },
+            { id: "indian-bread", name: "🫓 Fresh Breads" },
+            { id: "sizzlers", name: "💨 Sizzlers" },
+            { id: "pasta", name: "🍝 Pasta" },
+            { id: "desserts", name: "🍨 Desserts & Shakes" },
+            { id: "drinks", name: "🍹 Juices & Mocktails" },
+            { id: "continental-starters", name: "🍟 Continental Starters" }
+        ];
+        let selectedCategory = "all";
+        let searchQuery = "";
+        let bookingType = "dine";
+        document.addEventListener("DOMContentLoaded", () => {
+            initNavbarScroll();
+            renderCategories();
+            renderMenuItems();
+            initSearch();
+            initBookingForm();
+            highlightNavOnScroll();
+        });
+        // Sticky Navbar scroll trigger
+        function initNavbarScroll() {
+            const navbar = document.getElementById("navbar");
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+            });
+        }
+        // Scroll helper
+        window.scrollToSection = function(selector) {
+            document.querySelector(selector).scrollIntoView({ behavior: 'smooth' });
+        }
+        // Active link indicator
+        function highlightNavOnScroll() {
+            const sections = document.querySelectorAll("section, footer");
+            const navLinks = document.querySelectorAll(".navbar-links a");
+            window.addEventListener("scroll", () => {
+                let current = "";
+                sections.forEach(sec => {
+                    const top = sec.offsetTop - 100;
+                    if (window.scrollY >= top) {
+                        current = sec.getAttribute("id");
+                    }
+                });
+                navLinks.forEach(link => {
+                    link.classList.remove("active");
+                    if (link.getAttribute("href").includes(current)) {
+                        link.classList.add("active");
+                    }
+                });
+            });
+        }
+        // Render Menu Categories
+        function renderCategories() {
+            const container = document.getElementById("menuTabs");
+            if (!container) return;
+            container.innerHTML = CATEGORIES.map(cat => `
+                <button class="filter-tab-btn ${cat.id === selectedCategory ? 'active' : ''}" data-id="${cat.id}">
+                    ${cat.name}
+                </button>
+            `).join("");
+            container.querySelectorAll(".filter-tab-btn").forEach(btn => {
+                btn.addEventListener("click", () => {
+                    container.querySelectorAll(".filter-tab-btn").forEach(b => b.classList.remove("active"));
+                    btn.classList.add("active");
+                    selectedCategory = btn.getAttribute("data-id");
+                    renderMenuItems();
+                });
+            });
+        }
+        // Render Menu Catalog items (Text only layout with dotted line dividers)
+        function renderMenuItems() {
+            const grid = document.getElementById("menuGrid");
+            if (!grid) return;
+            const filtered = MENU_DATA.filter(item => {
+                const matchesCategory = selectedCategory === "all" || item.category === selectedCategory;
+                const matchesSearch = item.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                                     item.desc.toLowerCase().includes(searchQuery.toLowerCase());
+                return matchesCategory && matchesSearch;
+            });
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div style="grid-column: span 2; text-align: center; padding: 4rem 0; color: var(--text-muted);">
+                        <i class="fa-solid fa-magnifying-glass" style="font-size: 2.5rem; color: var(--primary-gold); margin-bottom: 1rem;"></i>
+                        <h4 style="font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 0.5rem; color: #ffffff">No matching culinary items found</h4>
+                        <p style="font-size: 0.85rem;">Try another keyword search or select a different category tab.</p>
+                    </div>
+                `;
+                return;
+            }
+            const activeCategories = CATEGORIES.filter(cat => cat.id !== "all");
+            let htmlContent = "";
+            activeCategories.forEach(cat => {
+                if (selectedCategory !== "all" && cat.id !== selectedCategory) return;
+                const catItems = filtered.filter(item => item.category === cat.id);
+                if (catItems.length > 0) {
+                    htmlContent += `
+                        <div class="menu-book-section-title">
+                            <h3 class="book-category-header">
+                                <i class="fa-solid fa-circle"></i> ${cat.name}
+                            </h3>
+                        </div>
+                    `;
+                    
+                    catItems.forEach(item => {
+                        htmlContent += `
+                            <div class="dish-row-item">
+                                <div class="dish-header-flex">
+                                    <span class="dish-name-txt">${item.name}</span>
+                                    <span class="dish-leader-dots"></span>
+                                    <span class="dish-price-txt">₹${item.price}</span>
+                                </div>
+                                <p class="dish-desc-txt">${item.desc}</p>
+                            </div>
+                        `;
+                    });
+                }
+            });
+            grid.innerHTML = htmlContent;
+        }
+        // Search bar filter action
+        function initSearch() {
+            const searchInput = document.getElementById("menuSearch");
+            if (searchInput) {
+                searchInput.addEventListener("input", (e) => {
+                    searchQuery = e.target.value;
+                    renderMenuItems();
+                });
+            }
+        }
+        // Booking panel form switcher and submission logic
+        function initBookingForm() {
+            const dineToggle = document.getElementById("dineToggle");
+            const banquetToggle = document.getElementById("banquetToggle");
+            const guestsGroup = document.getElementById("guestsFormGroup");
+            const eventGroup = document.getElementById("eventFormGroup");
+            const form = document.getElementById("bookingForm");
+            const dateInput = document.getElementById("bookDate");
+            if (dateInput) {
+                const today = new Date().toISOString().split("T")[0];
+                dateInput.value = today;
+                dateInput.min = today;
+            }
+            if (dineToggle && banquetToggle && guestsGroup && eventGroup) {
+                dineToggle.addEventListener("click", () => {
+                    dineToggle.classList.add("active");
+                    banquetToggle.classList.remove("active");
+                    guestsGroup.style.display = "flex";
+                    eventGroup.style.display = "none";
+                    bookingType = "dine";
+                });
+                banquetToggle.addEventListener("click", () => {
+                    banquetToggle.classList.add("active");
+                    dineToggle.classList.remove("active");
+                    guestsGroup.style.display = "none";
+                    eventGroup.style.display = "flex";
+                    bookingType = "banquet";
+                });
+            }
+            if (form) {
+                form.addEventListener("submit", (e) => {
+                    e.preventDefault();
+                    const name = document.getElementById("bookName").value;
+                    const phone = document.getElementById("bookPhone").value;
+                    const date = document.getElementById("bookDate").value;
+                    const notes = document.getElementById("bookNotes").value;
+                    let msg = "";
+                    if (bookingType === "dine") {
+                        const guests = document.getElementById("bookGuests").value;
+                        msg = `Hi VVED Restaurant, I'd like to reserve a fine-dining table:\nName: ${name}\nPhone: ${phone}\nDate: ${date}\nGuests: ${guests}\nSpecial requests: ${notes}`;
+                    } else {
+                        const event = document.getElementById("bookEvent").value;
+                        msg = `Hi VVEDHIC Banquets & Lawns, I'd like to request a lawn package quote:\nName: ${name}\nPhone: ${phone}\nDate of Event: ${date}\nEvent Category: ${event}\nNotes/Requirements: ${notes}`;
+                    }
+                    const url = `https://wa.me/919689344545?text=${encodeURIComponent(msg)}`;
+                    window.open(url, '_blank');
+                    form.reset();
+                    if (dateInput) {
+                        dateInput.value = new Date().toISOString().split("T")[0];
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>
